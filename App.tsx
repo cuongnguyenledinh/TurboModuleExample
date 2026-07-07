@@ -97,7 +97,7 @@ function App(): React.JSX.Element {
 }
 
 export default HotUpdater.wrap({
-  baseURL: 'https://<your-worker-name>.<your-subdomain>.workers.dev/api/check-update',
+  baseURL: 'https://hot-updater.cuong-nguyen-beb.workers.dev/api/check-update',
   updateStrategy: 'appVersion', // or "fingerprint"
   requestHeaders: {
     // if you want to use the request headers, you can add them here
