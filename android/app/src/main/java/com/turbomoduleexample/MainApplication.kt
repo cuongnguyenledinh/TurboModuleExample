@@ -7,6 +7,7 @@ import com.facebook.react.ReactHost
 import com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.nativelocalstorage.NativeLocalStoragePackage
+import com.hotupdater.HotUpdater
 
 class MainApplication : Application(), ReactApplication {
 
@@ -19,6 +20,7 @@ class MainApplication : Application(), ReactApplication {
           // add(MyReactNativePackage())
           add(NativeLocalStoragePackage())
         },
+      jsBundleFilePath = HotUpdater.getJSBundleFile(applicationContext),
     )
   }
 
